@@ -1,0 +1,25 @@
+/* File.css */
+.editor-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .toolbar {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .toolbar button {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .editor {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 200px;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+  }
+  
