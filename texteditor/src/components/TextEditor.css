@@ -1,0 +1,26 @@
+/* TextEditor.css */
+.text-editor-card {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 28px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Styling for the Quill editor */
+  .ql-toolbar {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .ql-container {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  /* You can add more styling based on your preferences */
+  

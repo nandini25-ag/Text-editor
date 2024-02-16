@@ -1,0 +1,20 @@
+/* RichTextEditor.css */
+.rich-text-editor-container {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .ql-toolbar {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .ql-editor {
+    padding: 10px;
+    min-height: 200px;
+    font-family: 'Arial', sans-serif;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+  }
+  

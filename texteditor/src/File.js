@@ -1,33 +1,15 @@
 // File.js
-import React, { useState, useRef } from 'react';
-import './File.css';
+import React from 'react';
+import RichTextEditor from './components/RichTextEditor';
 
-const File = () => {
-  const [content, setContent] = useState('');
-  const editorRef = useRef(null);
-
-  const handleFormat = (format) => {
-    document.execCommand(format, false, null);
-    editorRef.current.focus();
-  };
-
+const File = ({ id, name, initialContent, onContentChange }) => {
   return (
-    <div className="editor-container">
-      <div className="toolbar">
-        <button onClick={() => handleFormat('bold')}>Bold</button>
-        <button onClick={() => handleFormat('italic')}>Italic</button>
-        <button onClick={() => handleFormat('underline')}>Underline</button>
-        {/* Add more formatting options as needed */}
-      </div>
-      <div
-        ref={editorRef}
-        className="editor"
-        contentEditable
-        dangerouslySetInnerHTML={{ __html: content }}
-        onInput={(e) => setContent(e.currentTarget.innerHTML)}
-      />
+    <div>
+      <h3>{name}</h3>
+      <RichTextEditor fileId={id} initialContent={initialContent} onContentChange={onContentChange} />
     </div>
   );
 };
 
 export default File;
+
